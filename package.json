@@ -1,0 +1,19 @@
+{
+  "name": "@wuxuebin/npm-test",
+  "version": "1.0.0",
+  "description": "a npm test package",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "wuxuebin",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xuebinWu/npm-test.git"
+  },
+  "bugs": {
+    "url": "https://github.com/xuebinWu/npm-test/issues"
+  },
+  "homepage": "https://github.com/xuebinWu/npm-test#readme"
+}
