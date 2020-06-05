@@ -1,19 +1,52 @@
 {
-  "name": "@wuxuebin/npm-test",
-  "version": "1.0.0",
-  "description": "a npm test package",
-  "main": "index.js",
+  "name": "wuxuebin-public-npmtest",
+  "version": "0.1.2",
+  "main": "./dist/wuxuebin-public-npmtest.common.js",
+  "files": [
+    "dist/*",
+    "src/*",
+    "public/*",
+    "*.json",
+    "*.js"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "build-bundle": "vue-cli-service build --target lib --name wuxuebin-public-npmtest ./src/components/index.js"
   },
-  "author": "wuxuebin",
-  "license": "ISC",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/xuebinWu/npm-test.git"
+  "dependencies": {
+    "core-js": "^3.6.5",
+    "vue": "^2.6.11",
+    "vuetify": "^2.2.32"
   },
-  "bugs": {
-    "url": "https://github.com/xuebinWu/npm-test/issues"
+  "devDependencies": {
+    "vant": "^2.8.5",
+    "@vue/cli-plugin-babel": "~4.4.0",
+    "@vue/cli-plugin-eslint": "~4.4.0",
+    "@vue/cli-service": "~4.4.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^6.2.2",
+    "vue-template-compiler": "^2.6.11"
   },
-  "homepage": "https://github.com/xuebinWu/npm-test#readme"
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
 }
